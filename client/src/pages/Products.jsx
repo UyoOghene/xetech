@@ -106,7 +106,7 @@ const Products = () => {
                 onClick={() => setSelectedCategory(category.value)}
                 className={`px-4 py-2 rounded-full whitespace-nowrap transition-colors ${
                   selectedCategory === category.value
-                    ? 'bg-linear-to-r from-Xe-purple-500 to-Xe-pink-500 text-white'
+                    ? 'bg-gradient-to-r from-Xe-purple-500 to-Xe-pink-500 text-white' // FIXED: bg-gradient-to-r
                     : 'bg-white text-gray-700 border border-gray-300 hover:border-purple-500'
                 }`}
               >
@@ -126,7 +126,7 @@ const Products = () => {
               {/* Product Image */}
               <div className="relative h-48 bg-gray-100">
                 <img
-                  src={product.image } 
+                  src={product.image} 
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
@@ -168,9 +168,9 @@ const Products = () => {
                   <button
                     onClick={() => handleAddToCart(product)}
                     disabled={!product.inStock || !user}
-                    className={`flex-1 py-2 px-4 rounded-lg font-semibold transition-colors ${
+                    className={`flex-1 py-2 px-4 rounded-lg font-semibold transition-all duration-200 ${
                       product.inStock && user
-                        ? 'bg-linear-to-r from-Xe-purple-500 to-Xe-pink-500 text-white hover:opacity-90'
+                        ? 'bg-gradient-to-r from-Xe-purple-500 to-Xe-pink-500 text-black hover:from-Xe-purple-600 hover:to-Xe-pink-600 hover:shadow-lg transform hover:scale-105' // FIXED: text-white and better hover effects
                         : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                     }`}
                   >

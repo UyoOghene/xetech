@@ -86,7 +86,7 @@ const Navbar = () => {
                 <span className="text-gray-700">Hello, {user.name}</span>
                 <button
                   onClick={handleLogout}
-                  className="bg-gradient-to-r from-Xe-purple-500 to-Xe-pink-500 text-white px-4 py-2 rounded-full hover:opacity-90 transition duration-300"
+                  className="bg-gradient-to-r from-Xe-purple-500 to-Xe-pink-500 text-black px-4 py-2 rounded-full hover:opacity-90 transition duration-300"
                 >
                   Logout
                 </button>
@@ -101,7 +101,7 @@ const Navbar = () => {
                 </Link>
                 <Link 
                   to="/register" 
-                  className="bg-gradient-to-r from-Xe-purple-500 to-Xe-pink-500 text-white px-4 py-2 rounded-full hover:opacity-90 transition duration-300"
+                  className="bg-gradient-to-r from-Xe-purple-500 to-Xe-pink-500 text-xe-purple-500 px-4 py-2 rounded-full hover:opacity-90 transition duration-300"
                 >
                   Register
                 </Link>

@@ -16,6 +16,6 @@
     }
   ],
   "env": {
-    "VITE_API_BASE_URL": "https://your-backend-app.vercel.app/api"
+    "VITE_API_BASE_URL": "https://xeteche.vercel.app/"
   }
 }
